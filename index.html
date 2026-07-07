@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sourcing Screen — AI-Enabled Roll-Up Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap" id="app">
+  <header>
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="title"></h1>
+    <span class="sub" id="subtitle"></span>
+    <div class="as-of" id="asOf"></div>
+    <div class="disclaimer" id="disclaimer"></div>
+  </header>
+
+  <div class="thesis-card">
+    <p class="thesis-headline" id="thesisHeadline"></p>
+    <p class="thesis-body" id="thesisBody"></p>
+  </div>
+
+  <div class="section-title">Five-box screen — drag to re-weight, pipeline re-ranks live</div>
+  <div class="framework-grid" id="frameworkRoot"></div>
+
+  <div class="section-title">Pipeline</div>
+  <div class="controls-bar">
+    <input type="text" id="searchInput" placeholder="Search name, vertical, location...">
+    <select id="verticalFilter"></select>
+    <select id="stageFilter"></select>
+    <select id="channelFilter"></select>
+    <label class="checkbox-label"><input type="checkbox" id="activeOnly"> Active pipeline only</label>
+    <select id="sortSelect">
+      <option value="composite-desc">Score: high to low</option>
+      <option value="composite-asc">Score: low to high</option>
+      <option value="sourced-desc">Recently sourced</option>
+      <option value="ebitda-desc">EBITDA: high to low</option>
+    </select>
+  </div>
+
+  <div class="stats-row" id="statsRoot"></div>
+
+  <div id="pipelineRoot"></div>
+
+  <footer>
+    Illustrative data only — see disclaimer above. Built by Bakul Badwal with Claude Code. MIT licensed.
+  </footer>
+</div>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="drawer">
+  <button class="drawer-close" id="drawerClose">&times;</button>
+  <div id="drawerBody"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
