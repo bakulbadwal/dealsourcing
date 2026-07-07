@@ -9,19 +9,28 @@
 <body>
 <div class="wrap" id="app">
   <header>
-    <div class="eyebrow" id="eyebrow"></div>
-    <h1 id="title"></h1>
-    <span class="sub" id="subtitle"></span>
-    <div class="as-of" id="asOf"></div>
-    <div class="disclaimer" id="disclaimer"></div>
+    <div>
+      <div class="eyebrow" id="eyebrow"></div>
+      <h1 id="title"></h1>
+      <span class="sub" id="subtitle"></span>
+      <div class="as-of" id="asOf"></div>
+    </div>
+    <div class="header-ticker">
+      Avg weighted score
+      <span class="big" id="tickerScore">—</span>
+    </div>
   </header>
 
+  <div class="disclaimer" id="disclaimer"></div>
+
+  <div class="section-title">Thesis</div>
   <div class="thesis-card">
     <p class="thesis-headline" id="thesisHeadline"></p>
     <p class="thesis-body" id="thesisBody"></p>
   </div>
 
   <div class="section-title">Five-box screen — drag to re-weight, pipeline re-ranks live</div>
+  <div class="presets-row" id="presetsRoot"></div>
   <div class="framework-grid" id="frameworkRoot"></div>
 
   <div class="section-title">Pipeline</div>
@@ -30,7 +39,7 @@
     <select id="verticalFilter"></select>
     <select id="stageFilter"></select>
     <select id="channelFilter"></select>
-    <label class="checkbox-label"><input type="checkbox" id="activeOnly"> Active pipeline only</label>
+    <label class="checkbox-label"><input type="checkbox" id="activeOnly"> Active only</label>
     <select id="sortSelect">
       <option value="composite-desc">Score: high to low</option>
       <option value="composite-asc">Score: low to high</option>
@@ -41,9 +50,20 @@
 
   <div class="stats-row" id="statsRoot"></div>
 
-  <div id="pipelineRoot"></div>
+  <table class="pipeline-table">
+    <thead>
+      <tr>
+        <th>Deal</th>
+        <th>Stage</th>
+        <th>Channel</th>
+        <th>Financials</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody id="pipelineRoot"></tbody>
+  </table>
 
-  <footer>
+  <footer id="footerText">
     Illustrative data only — see disclaimer above. Built by Bakul Badwal with Claude Code. MIT licensed.
   </footer>
 </div>

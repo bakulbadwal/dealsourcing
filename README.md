@@ -11,9 +11,12 @@ A deal-sourcing and screening dashboard built around a specific, opinionated the
 ## What's inside
 
 - **The five-box screen** — five weighted criteria (market fragmentation, unit economics, AI-adoption leverage, moat & stickiness, exit path), each with a live slider. Drag any weight and the entire 30-deal pipeline re-ranks in real time — the point is to make the thesis's sensitivity to its own assumptions visible, not just show a static scorecard.
-- **A 30-deal illustrative pipeline** across 10 service verticals (IT managed services, bookkeeping, marketing agencies, home services, staffing, legal back-office, medical billing/RCM, logistics, customer support/BPO, property management), spanning every stage from sourced to closed to passed — including deals that fail the screen, not just wins.
-- **A deal detail drawer** — click any deal for the full five-box breakdown with a one-line rationale per criterion, plus financials and a thesis note.
+- **Weight presets** — one-click lens switches (Balanced, AI-Leverage Max, Margin First, Moat & Exit) that jump all five sliders at once; any manual drag hands control back to you.
+- **A 30-deal illustrative pipeline** across 10 service verticals (IT managed services, bookkeeping, marketing agencies, home services, staffing, legal back-office, medical billing/RCM, logistics, customer support/BPO, property management), spanning every stage from sourced to closed to passed — including deals that fail the screen, not just wins. Each row carries an inline thesis note explaining why the deal ranks where it does.
+- **A deal detail drawer with a radar chart** — click any deal for its five-box shape rendered as a live SVG radar (a spiky AI-leverage deal looks visibly different from a balanced platform candidate), plus per-criterion rationale, financials, and the thesis note.
 - **Filters and live stats** — search, vertical/stage/channel filters, an active-pipeline-only toggle, and a stats bar (deals shown, active pipeline, closed, average weighted score).
+
+The visual language is deliberately terminal-inspired — monospace numerals, hairline rules, a single green accent that carries meaning (high scores and healthy stages) rather than decoration.
 
 ## Architecture
 
