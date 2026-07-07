@@ -2,7 +2,7 @@
 
 A deal-sourcing and screening dashboard built around a specific, opinionated thesis: PE doesn't play well at the AI labs/compute layer — it plays in the fragmented, already-profitable SMB service businesses (bookkeeping, IT support, medical billing, home services) where AI is a margin lever on an existing cash-flow base, not the product itself.
 
-**All data is fictional.** Every company, financial figure, and deal note is illustrative — built to demonstrate a sourcing/screening framework end-to-end, not to represent real targets or any employer's actual pipeline.
+**All data is fictional.** Every company, financial figure, and deal note is solely illustrative — built to demonstrate a sourcing/screening framework end-to-end, not to represent real targets.
 
 **Live:** https://bakulbadwal.github.io/dealsourcing/
 
