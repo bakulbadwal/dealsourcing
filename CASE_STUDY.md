@@ -1,4 +1,4 @@
-# Case Study — The Sourcing Screen
+# Case Study — Deal Docket
 ### A product-thinking write-up (not a README). To run it, see [README](./README.md); this is the *why*.
 
 A deal-sourcing and screening dashboard that makes a scoring framework's *assumptions* visible and adjustable — built around an opinionated thesis, with fully illustrative data.
